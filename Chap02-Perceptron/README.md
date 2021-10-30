@@ -2,6 +2,7 @@
 
 ## Copyrights
 1. textbook official repository: https://github.com/WegraLee/deep-learning-from-scratch
+    * 아래 python code들은 [chapter 2](https://github.com/WegraLee/deep-learning-from-scratch/tree/master/ch02)에서 가져왔습니다.
 1. fork source: https://github.com/ExcelsiorCJH/DLFromScratch [(chapter2)](https://nbviewer.jupyter.org/github/ExcelsiorCJH/DLFromScratch/blob/master/Chap02-Perceptron/Chap02-Perceptron.ipynb)
 1. additional repository: https://github.com/SDRLurker/deep-learning [(chapter2)](https://nbviewer.jupyter.org/github/SDRLurker/deep-learning/blob/master/2%EC%9E%A5.ipynb)
 
