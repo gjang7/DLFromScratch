@@ -2,9 +2,13 @@
 
 ### 수정사항
 
-`dataset/`에 있는 데이터 파일들을 삭제하였습니다. 본 repository 의 전체 크기를 줄이기 위함입니다. 
+`equations_and_figures/` 폴더 전체와 
+`dataset/`에 있는 데이터 파일들을 삭제하였습니다. 
+본 repository 의 전체 크기를 줄이기 위함입니다. 
 fork source인 https://github.com/ExcelsiorCJH/DLFromScratch 에는 유지되어 있습니다.
 
+1. 아래 folder는 삭제하였습니다. 필요한 그림들은 개별 chapter에 복사되어 있습니다.
+    - `equations_and_figures/`
 1. 아래 python script는 유지하였습니다.
     - `dataset/mnist.py`    
 1. 아래 파일들은 http://yann.lecun.com/exdb/mnist/ 에서 받을 수 있고, `dataset/mnist.py`을 실행시키면 자동으로 받을 수 있습니다.
