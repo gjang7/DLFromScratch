@@ -1,5 +1,21 @@
 # DL From Scratch
 
+### 수정사항
+
+`dataset/`에 있는 데이터 파일들을 삭제하였습니다. 본 repository 의 전체 크기를 줄이기 위함입니다. 
+fork source인 https://github.com/ExcelsiorCJH/DLFromScratch 에는 유지되어 있습니다.
+
+1. 아래 python script는 유지하였습니다.
+    - `dataset/mnist.py`    
+1. 아래 파일들은 http://yann.lecun.com/exdb/mnist/ 에서 받을 수 있고, `dataset/mnist.py`을 실행시키면 자동으로 받을 수 있습니다.
+    - `dataset/t10k-images-idx3-ubyte.gz`
+    - `dataset/t10k-labels-idx1-ubyte.gz`
+    - `dataset/train-images-idx3-ubyte.gz`
+    - `dataset/train-labels-idx1-ubyte.gz`
+1. 아래 파일은 `dataset/mnist.py`을 실행하면 자동으로 생성됩니다.
+    - `dataset/mnist.pkl`
+
+
 ## 1. 교재 
 
 ### 밑바닥부터 시작하는 딥러닝

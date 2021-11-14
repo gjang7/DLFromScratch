@@ -181,4 +181,11 @@ $RECYCLE.BIN/
 # pptx
 *.pptx
 
+# large MNIST files
+dataset/mnist.pkl
+dataset/t10k-images-idx3-ubyte.gz
+dataset/t10k-labels-idx1-ubyte.gz
+dataset/train-images-idx3-ubyte.gz
+dataset/train-labels-idx1-ubyte.gz
+
 # End of https://www.gitignore.io/api/linux,macos,python,windows,jupyternotebook,visualstudiocode
