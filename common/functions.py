@@ -42,7 +42,8 @@ def mean_squared_error(y, t):
     return 0.5 * np.sum((y-t)**2)
 
 
-def cross_entropy_error(y, t):
+# GJANG: wrong implementation
+def cross_entropy_error_obsolete(y, t):
     if y.ndim == 1:
         t = t.reshape(1, t.size)
         y = y.reshape(1, y.size)
@@ -53,6 +54,26 @@ def cross_entropy_error(y, t):
 
     batch_size = y.shape[0]
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
+
+
+# GJANG: revised
+def cross_entropy_error(y, t):
+    if y.ndim == 1:
+        t = t.reshape(1, t.size)
+        y = y.reshape(1, y.size)
+
+    # 훈련 데이터가 원-핫 벡터라면 정답 레이블의 인덱스로 반환
+    if t.size == y.size:
+        t = t.argmax(axis=1)
+
+    batch_size = y.shape[0]
+    # wrong
+    # return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
+    cee = 0
+    for n in range(batch_size):
+        cee -= np.log(y[n, t[n]] + 1e-7)
+    cee /= batch_size
+    return cee
 
 
 def softmax_loss(X, t):
