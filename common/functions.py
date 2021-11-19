@@ -42,8 +42,7 @@ def mean_squared_error(y, t):
     return 0.5 * np.sum((y-t)**2)
 
 
-# GJANG: wrong implementation
-def cross_entropy_error_obsolete(y, t):
+def cross_entropy_error(y, t):
     if y.ndim == 1:
         t = t.reshape(1, t.size)
         y = y.reshape(1, y.size)
@@ -57,7 +56,7 @@ def cross_entropy_error_obsolete(y, t):
 
 
 # GJANG: revised
-def cross_entropy_error(y, t):
+def cross_entropy_error_alt(y, t):
     if y.ndim == 1:
         t = t.reshape(1, t.size)
         y = y.reshape(1, y.size)
@@ -67,7 +66,6 @@ def cross_entropy_error(y, t):
         t = t.argmax(axis=1)
 
     batch_size = y.shape[0]
-    # wrong
     # return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
     cee = 0
     for n in range(batch_size):
