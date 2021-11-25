@@ -1,5 +1,7 @@
 # 4장 신경망 학습 Neural Network Training
 
+이번 장에서는 신경망 학습(training)에 대해 알아보자. **학습**이란 학습 데이터로부터 가중치 매개변수의 최적값을 자동으로 찾는것을 말한다. 또한, 이번 장에서는 신경망이 학습할 수 있도록 하는 **지표**에 해당하는 ***손실함수*** 에 대해 알아보자.
+
 ## Copyrights
 1. textbook official repository: https://github.com/WegraLee/deep-learning-from-scratch
     * 아래 python code들은 [chapter 4](https://github.com/WegraLee/deep-learning-from-scratch/tree/master/ch04)에서 가져왔습니다.
